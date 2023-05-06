@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+#  Proyecto de E-commerce con Next.js y Sanity
+Este es un proyecto de e-commerce construido con el framework de React, Next.js, y con un backend creado con Sanity, un sistema de gestión de contenido basado en la nube. El objetivo principal de este proyecto es mostrar cómo se puede crear una aplicación de comercio electrónico moderna y escalable utilizando estas herramientas.
 
-## Getting Started
+## Requisitos
+Antes de poder ejecutar este proyecto, deberá tener instalado lo siguiente:
 
-First, run the development server:
+- Node.js
+- npm
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+## Instalación
+Para instalar este proyecto en su máquina local, siga estos pasos:
+
+    git clone https://github.com/DeividGonzalezDev/ecommerce.git
+    npm install
+
+
+
+Ejecute el comando `npm run dev` para iniciar el servidor de desarrollo.
+
+## Uso
+Una vez que el servidor esté en funcionamiento, puede visitar la página de inicio de la aplicación en http://localhost:3000.
+
+#### Nota:
+*Para poder recibir pagos y administrar su backend con Sanity deberá crear un fichero `.env` y setear las siguiente variables:*
+```javascript
+NEXT_PUBLIC_SANITY_TOKEN='Tu clave de Sanity' //indispensable para el funcionamiento de la web app
+PUBLIC_MERCADOPAGO_KEY= 'Tu clave pública de Mercado Pago'
+SECRET_MERCADOPAGO_KEY='Tu Token Privado de Mercado Pago'
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### La aplicación tiene las siguientes funcionalidades:
 
-[http://localhost:3000/api/hello](http://localhost:3000/api/hello) is an endpoint that uses [Route Handlers](https://beta.nextjs.org/docs/routing/route-handlers). This endpoint can be edited in `app/api/hello/route.js`.
+- Catálogo de productos
+- Página de detalles del producto
+- Carrito de compras
+- Página de pago
+- Historial de pedidos* (próximamente)*
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Puede utilizar estas funcionalidades para explorar y realizar compras en la tienda. Los pedidos realizados en la tienda se almacenarán en el backend de Sanity, donde puede consultarlos y administrarlos.
 
-## Learn More
+## Contribución
+Si desea contribuir a este proyecto, puede hacer lo siguiente:
 
-To learn more about Next.js, take a look at the following resources:
+- Cree un fork del repositorio.
+- Cree una nueva rama en su fork.
+- Haga sus cambios en la nueva rama.
+- Cree una solicitud de extracción en el repositorio principal.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Créditos
+Este proyecto fue construido por ***Deivid González.***
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<img src="https://avatars.githubusercontent.com/u/105879580?v=4" alt="Deivid Profile" width="150" style='border-radius:50%'>
